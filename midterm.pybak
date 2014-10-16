@@ -80,7 +80,7 @@ def drawCircle(pic,diameter):
   for i in range (628):
     x=diameter*cos(2*pi*i/628)+150
     y=diameter*sin(2*pi*i/628)+150
-  p=getPixel(pic,int(x),int(y))
+  p = getPixel(pic,int(x),int(y))
   setColor(p,black)
  
 def colorCenter(pic,diameter):
@@ -112,7 +112,7 @@ def drawPlus(pic):
   for y in range (150,151):
     for x in range(0,getWidth(pic)):
       p=getPixel(pic,x,y)
-      setColor (b,black) 
+      setColor (p,black) 
 
 def question19():
   pic=makeEmptyPicture(300,300)
